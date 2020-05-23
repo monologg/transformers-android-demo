@@ -108,7 +108,7 @@ dependencies {
 
 ※ The models are already uploaded on huggingface s3. They will be automatically downloaded during build. If you want to download `fp16` or `8bits` model, uncomment the line in [download.gradle](./app/download.gradle).
 
-🚨 **TFLite conversion isn't working with CPU environment, working well with GPU.** 🚨
+🚨 **TFLite conversion isn't working on CPU environment, working well with GPU environment.** 🚨
 
 You should specify **the input shape(=max_seq_len)** for model conversion.
 
