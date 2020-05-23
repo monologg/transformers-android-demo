@@ -1,0 +1,16 @@
+.DS_Store
+local.properties
+**/*.iml
+.gradle
+.idea/
+.externalNativeBuild
+build
+
+__pycache__
+*.tflite
+*.pt
+
+!imdb_small.pt
+!nsmc_small.pt
+!imdb_small.tflite
+!nsmc_small.tflite

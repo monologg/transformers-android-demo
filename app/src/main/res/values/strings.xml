@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Transformers Demo</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome_skip_button">Skip</string>
+
+    <string name="main_korean_nlp_title">🇰🇷 Korean</string>
+    <string name="korean">Korean</string>
+    <string name="nsmc_pytorch">Korean Movie Review (Pytorch)</string>
+    <string name="nsmc_tensorflow">Korean Movie Review (Tensorflow)</string>
+
+    <string name="main_english_nlp_title">🇺🇸 English</string>
+    <string name="english">English</string>
+    <string name="imdb_pytorch">English Movie Review (Pytorch)</string>
+    <string name="imdb_tensorflow">English Movie Review (Tensorflow)</string>
+
+    <string name="welcome_page_title">Welcome!</string>
+    <string name="welcome_page_description">Tensorflow &amp; Pytorch mobile demo application</string>
+
+    <string name="welcome_page_nlp_title">Text Classification</string>
+    <string name="welcome_page_nlp_description">Text classification examples run packaged inside app models on user entered text</string>
+
+    <string name="nlp_card_title">NSMC Classification\nwith KoELECTRA-Small</string>
+
+    <string name="text_classification_edittext_hint">Something like a reddit comment...</string>
+
+    <string name="nlp_card_nsmc_pt_title">NSMC Classification\nwith KoELECTRA-Small\n(Pytorch-Mobile)</string>
+    <string name="nlp_card_nsmc_tf_title">NSMC Classification\nwith KoELECTRA-Small\n(Tensorflow-Lite)</string>
+    <string name="nlp_card_description">Predicts sentiment by given comment with Wordpiece Tokenizer</string>
+    <string name="nsmc_sentiment">Sentiment</string>
+    <string name="nsmc_score">Score</string>
+    <string name="nsmc_edittext_hint">영화 관련 한국어 리뷰 입력...</string>
+    <string name="nsmc_negative">Negative</string>
+    <string name="nsmc_positive">Positive</string>
+
+    <string name="nlp_card_imdb_pt_title">IMDB Classification\nwith ELECTRA-Small\n(Pytorch-Mobile)</string>
+    <string name="nlp_card_imdb_tf_title">IMDB Classification\nwith ELECTRA-Small\n(Tensorflow-Lite)</string>
+    <string name="imdb_sentiment">Sentiment</string>
+    <string name="imdb_score">Score</string>
+    <string name="imdb_edittext_hint">Something like movie review..</string>
+    <string name="imdb_negative">Negative</string>
+    <string name="imdb_positive">Positive</string>
+
+    <string name="error_dialog_text">Sorry there was an error.</string>
+    <string name="clear">Clear</string>
+
+
+</resources>

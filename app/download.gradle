@@ -1,0 +1,23 @@
+apply plugin: 'de.undercouch.download'
+
+task downloadLiteModel {
+    def downloadFiles = [
+            "https://s3.amazonaws.com/models.huggingface.co/bert/monologg/koelectra-small-finetuned-sentiment/nsmc_small.pt"         : "nsmc_small.pt",
+            "https://s3.amazonaws.com/models.huggingface.co/bert/monologg/koelectra-small-finetuned-sentiment/nsmc_small.tflite"      : "nsmc_small.tflite",
+//            "https://s3.amazonaws.com/models.huggingface.co/bert/monologg/koelectra-small-finetuned-sentiment/nsmc_small_fp16.tflite" : "nsmc_small_fp16.tflite",
+//            "https://s3.amazonaws.com/models.huggingface.co/bert/monologg/koelectra-small-finetuned-sentiment/nsmc_small_8bits.tflite": "nsmc_small_8bits.tflite",
+            "https://s3.amazonaws.com/models.huggingface.co/bert/monologg/koelectra-small-finetuned-sentiment/vocab.txt"              : "nsmc_vocab.txt",
+            "https://s3.amazonaws.com/models.huggingface.co/bert/monologg/electra-small-finetuned-imdb/imdb_small.pt"                 : "imdb_small.pt",
+            "https://s3.amazonaws.com/models.huggingface.co/bert/monologg/electra-small-finetuned-imdb/imdb_small.tflite"             : "imdb_small.tflite",
+//            "https://s3.amazonaws.com/models.huggingface.co/bert/monologg/electra-small-finetuned-imdb/imdb_small_fp16.tflite"        : "imdb_small_fp16.tflite",
+//            "https://s3.amazonaws.com/models.huggingface.co/bert/monologg/electra-small-finetuned-imdb/imdb_small_8bits.tflite"       : "imdb_small_8bits.tflite",
+            "https://s3.amazonaws.com/models.huggingface.co/bert/monologg/electra-small-finetuned-imdb/vocab.txt"                     : "imdb_vocab.txt",
+    ]
+    downloadFiles.each { key, value ->
+        download {
+            src key
+            dest "$projectDir/src/main/assets/" + value
+            overwrite false
+        }
+    }
+}
