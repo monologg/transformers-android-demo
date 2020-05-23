@@ -82,7 +82,7 @@ converter = tf.lite.TFLiteConverter.from_keras_model(model)
 converter.target_spec.supported_ops = [tf.lite.OpsSet.SELECT_TF_OPS]
 ```
 
-🚨 For using transformers tflite model, **you should build aar file by yourself.** (Please check this [documentation for tflite ops](https://www.tensorflow.org/lite/guide/ops_select)) 🚨
+🚨 Using the transformers tflite model, **you should build aar file by yourself.** (Please check this [documentation for tflite ops](https://www.tensorflow.org/lite/guide/ops_select)) 🚨
 
 In this app, I used the same aar file provided from [huggingface demo app](https://github.com/huggingface/tflite-android-transformers/tree/master/bert/libs). (The `libs` directory contains a custom build of aar.)
 
@@ -108,7 +108,7 @@ dependencies {
 
 ※ The models are already uploaded on huggingface s3. They will be automatically downloaded during build. If you want to download `fp16` or `8bits` model, uncomment the line in [download.gradle](./app/download.gradle).
 
-🚨 For TFLite Conversion, **conversion isn't working with CPU environment.** 🚨
+🚨 **TFLite conversion isn't working with CPU environment, working well with GPU.** 🚨
 
 You should specify **the input shape(=max_seq_len)** for model conversion.
 
