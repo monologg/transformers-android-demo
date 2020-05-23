@@ -32,7 +32,7 @@ Most of the assets are from [Official Pytorch Android Code](https://github.com/p
     <img width="200" style="margin-right: 10px" src="https://user-images.githubusercontent.com/28896432/82734749-f5379e80-9d57-11ea-9a2e-5c3f1fe654c7.jpg">
     <img width="200" style="margin-right: 10px" src="https://user-images.githubusercontent.com/28896432/82734750-f668cb80-9d57-11ea-92b0-3cbef929570b.jpg">
     <img width="200" style="margin-right: 10px" src="https://user-images.githubusercontent.com/28896432/82734752-f668cb80-9d57-11ea-9ced-ebbec7053d2e.jpg">
-    <img width="200" style="margin-right: 10px"  src="https://user-images.githubusercontent.com/28896432/82734753-f7016200-9d57-11ea-8dc9-13d01c9f0857.jpg">
+    <img width="200" style="margin-right: 10px"  src="https://user-images.githubusercontent.com/28896432/82739546-4f962680-9d7b-11ea-854d-6efc912a6e09.jpg">
 </div>
 
 ### Build the demo app
