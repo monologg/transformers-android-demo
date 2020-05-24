@@ -137,7 +137,7 @@ private static final int MAX_SEQ_LEN = 40;
 ```
 
 - **In TFLite, dynamic input size is not supported!** ([Related Issue](https://github.com/tensorflow/tensorflow/issues/24607)) So if the input shape doesn't match with `max_seq_len`, it crashes:( You should pad the input sequence for tflite model.
-- But in torchscipt, even though we specified the input shape when converting the model, variable lengths are also possible. **So I didn't padded the sequence for pytorch demo.** If you want to pad the sequence for pytorch demo, please change the variable as below.
+- But in torchscipt, even though we specified the input shape when converting the model, variable lengths are also possible. **So I didn't pad the sequence for pytorch demo.** If you want to pad the sequence for pytorch demo, please change the variable as below.
 
 ```java
 private static final boolean PAD_TO_MAX_LENGTH = true;
