@@ -42,7 +42,7 @@ if args.model == "default":
     # 1. For normal conversion:
     converter.target_spec.supported_ops = [tf.lite.OpsSet.SELECT_TF_OPS]
     tflite_model = converter.convert()
-    open("app/src/main/assets/nsmc_small.tflite", "wb").write(tflite_model)
+    open("app/src/main/assets/imdb_small.tflite", "wb").write(tflite_model)
 elif args.model == "fp16":
     # 2. For conversion with FP16 quantization:
     converter.target_spec.supported_ops = [tf.lite.OpsSet.TFLITE_BUILTINS, tf.lite.OpsSet.SELECT_TF_OPS]
@@ -50,13 +50,13 @@ elif args.model == "fp16":
     converter.optimizations = [tf.lite.Optimize.DEFAULT]
     converter.experimental_new_converter = True
     tflite_model = converter.convert()
-    open("app/src/main/assets/nsmc_small_fp16.tflite", "wb").write(tflite_model)
+    open("app/src/main/assets/imdb_small_fp16.tflite", "wb").write(tflite_model)
 elif args.model == "8bits":
     # 3. For conversion with hybrid quantization:
     converter.target_spec.supported_ops = [tf.lite.OpsSet.TFLITE_BUILTINS, tf.lite.OpsSet.SELECT_TF_OPS]
     converter.optimizations = [tf.lite.Optimize.OPTIMIZE_FOR_SIZE]
     converter.experimental_new_converter = True
     tflite_model = converter.convert()
-    open("app/src/main/assets/nsmc_small_8bits.tflite", "wb").write(tflite_model)
+    open("app/src/main/assets/imdb_small_8bits.tflite", "wb").write(tflite_model)
 else:
     raise ValueError("Only default, fp16, 8bits available!")
