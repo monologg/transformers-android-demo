@@ -148,8 +148,11 @@ public class IMDBPytorchActivity extends BaseModuleActivity {
     protected void onStart() {
         Log.v(TAG, "onStart");
         super.onStart();
-        Log.v(TAG, "Loading Model...");
+        Log.v(TAG, "Loading Model (" + MODEL_PATH + ")...");
+        final long ModelStartTime = SystemClock.elapsedRealtime();
         loadModel();
+        final long ModelLoadDuration = SystemClock.elapsedRealtime() - ModelStartTime;
+        Log.v(TAG, "Loading Time: " + ModelLoadDuration + "ms");
         Log.v(TAG, "Loading Dictionary");
         this.loadDictionary();
         Log.v(TAG, "Loading Feature Converter");
